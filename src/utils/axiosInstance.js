@@ -4,7 +4,7 @@ import logger from './logger';
 const MODULE = 'AxiosInstance';
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api',
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://open-journal-backend.onrender.com/api',
   headers: { 'Content-Type': 'application/json' },
   timeout: 15000,
 });
